@@ -216,10 +216,9 @@
 	/*	contact form
 	------------------------------------------------------ */
 
-	/* local validation */
+	/* local validation 
 	$('#contactForm').validate({
 
-		/* submit via ajax */
 		submitHandler: function(form) {
 
 			var sLoader = $('#submit-loader');
@@ -251,10 +250,10 @@
 	            }
 
 		      },
-		      error: function(msg) {
+		      error: function() {
 
 		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html(msg);
+		      	$('#message-warning').html("Something went wrong. Please try again.");
 		         $('#message-warning').fadeIn();
 
 		      }
@@ -262,7 +261,7 @@
 	      });     		
   		}
 
-	});
+	});*/
 
 
  	/*----------------------------------------------------- */
