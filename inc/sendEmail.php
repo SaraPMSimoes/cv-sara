@@ -6,6 +6,10 @@ echo "quero um print aqui"
 $siteOwnersEmail = 'ss.sarapsimoes@gmail.com';
 echo "quero um print aqui"
 
+session_cache_limiter( 'nocache' );
+header( 'Expires: ' . gmdate( 'r', 0 ) );
+header( 'Content-type: application/json' );
+
 
 if($_POST) {
 
@@ -47,9 +51,10 @@ if($_POST) {
    $from =  $name . " <" . $email . ">";
 
    // Email Headers
-	$headers = "From: " . $email . "\r\n";
+	$headers = "From: " . $from . "\r\n";
 	$headers .= "Reply-To: ". $email . "\r\n";
- 	$headers .= "X-Mailer: PHP/" . phpversion();
+	$headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
 
    if (!$error) {
