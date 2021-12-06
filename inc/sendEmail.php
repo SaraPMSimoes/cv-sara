@@ -11,6 +11,12 @@ if($_POST) {
    $subject = trim(stripslashes($_POST['contactSubject']));
    $contact_message = trim(stripslashes($_POST['contactMessage']));
 
+   echo $name
+   echo $email
+   echo $subject
+   echo $contact_message
+   echo $siteOwnersEmail
+   
    // Check Name
 	if (strlen($name) < 2) {
 		$error['name'] = "Please enter your name.";
