@@ -251,10 +251,10 @@
 	            }
 
 		      },
-		      error: function() {
+		      error: function(msg) {
 
 		      	sLoader.fadeOut(); 
-		      	$('#message-warning').html("Something went wrong. Please try again.");
+		      	$('#message-warning').html(msg);
 		         $('#message-warning').fadeIn();
 
 		      }
