@@ -2,6 +2,7 @@
 
 // Replace this with your own email address
 $siteOwnersEmail = 'ss.sarapsimoes@gmail.com';
+echo $siteOwnersEmail
 
 
 if($_POST) {
@@ -16,7 +17,7 @@ if($_POST) {
    echo $subject
    echo $contact_message
    echo $siteOwnersEmail
-   
+
    // Check Name
 	if (strlen($name) < 2) {
 		$error['name'] = "Please enter your name.";
