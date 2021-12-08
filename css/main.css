@@ -1499,6 +1499,8 @@ header .logo a {
 	margin-top: 4.2rem;
 	margin-right: -30px;
 	margin-left: -30px;
+	text-align: left;
+
 }
 .intro-info img {
 	height: 9rem;
