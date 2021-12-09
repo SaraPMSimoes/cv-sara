@@ -2414,6 +2414,7 @@ header .logo a {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.5rem;
 	text-align: center;
+	left: 10rem;
 }
 .contact-info .collapse {
 	padding: 0;
